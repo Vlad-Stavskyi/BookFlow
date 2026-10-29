@@ -20,3 +20,20 @@ Console.WriteLine(clientBalance);
 bool isSlotAvailable = true;
 Console.Write("Available: ");
 Console.WriteLine(isSlotAvailable);
+
+
+Console.WriteLine();
+
+if (isSlotAvailable == false)
+{
+    Console.WriteLine("Slot unavailable");
+}
+else if (clientBalance < sessionPrice)
+{
+    Console.WriteLine("Not enough money");
+}
+else
+{
+    Console.WriteLine("Booking confirmed");
+}
+
