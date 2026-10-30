@@ -34,6 +34,15 @@ else if (clientBalance < sessionPrice)
 }
 else
 {
+    clientBalance = clientBalance -  sessionPrice;
+    isSlotAvailable = false;
+
     Console.WriteLine("Booking confirmed");
+
+    Console.Write("Remaining balance: ");
+    Console.WriteLine(clientBalance);
+    
+    Console.Write("Available after booking: ");
+    Console.WriteLine(isSlotAvailable);
 }
 
